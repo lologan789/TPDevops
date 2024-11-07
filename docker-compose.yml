@@ -1,0 +1,22 @@
+services:
+  frontend:
+    build: ./chat-frontend/
+    ports:
+      - "80:80"  # Remap le port 8080 du conteneur vers 4200 local
+    volumes:
+      - ./chat-frontend/dist/chat-frontend/browser:/usr/share/nginx/html
+    networks:
+      - app-network
+    depends_on:
+      - backend
+
+  backend:
+    build: ./Backend
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
