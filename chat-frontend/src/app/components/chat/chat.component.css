@@ -1,0 +1,72 @@
+/* Style général pour la chatbox */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px; /* Largeur de la chatbox */
+    max-height: 500px; /* Hauteur maximale */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Cache le débordement */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    background-color: #f9f9f9; /* Couleur de fond */
+  }
+  
+  /* Style pour la zone des messages */
+  .messages {
+    flex: 1; /* Prend tout l'espace disponible */
+    padding: 10px; /* Espacement interne */
+    overflow-y: auto; /* Défilement vertical */
+    border-bottom: 1px solid #ccc; /* Bordure entre messages et zone de saisie */
+  }
+  
+  /* Style pour chaque message */
+  .message {
+    margin: 5px 0; /* Espacement entre les messages */
+    padding: 8px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #e0e0e0; /* Couleur de fond des messages */
+  }
+  
+  /* Style pour l'input et le bouton */
+  .input-container {
+    display: flex; /* Utiliser flexbox pour le formulaire */
+    padding: 10px; /* Espacement interne */
+    background-color: #fff; /* Couleur de fond */
+  }
+  
+  /* Style pour l'input de message */
+  .input-message {
+    flex: 1; /* Prend tout l'espace disponible */
+    padding: 10px; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    margin-right: 10px; /* Espacement à droite */
+  }
+  
+  /* Style pour le bouton d'envoi */
+  .send-button {
+    padding: 10px 15px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    cursor: pointer; /* Curseur pointer */
+    transition: background-color 0.3s; /* Transition douce */
+  }
+  
+  /* Effet au survol du bouton */
+  .send-button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+  }
+  /* Styles pour le message du bot */
+.bot-message {
+    background-color: #d1e7dd; /* Couleur de fond différente */
+    color: #5fc9f8; /* Couleur du texte différente */
+  }
+  
+  /* Styles pour le message de l'utilisateur */
+  .user-message {
+    background-color: #e2e3e5; /* Couleur de fond différente */
+    color: #383d41; /* Couleur du texte différente */
+  }
+  
